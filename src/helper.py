@@ -1,9 +1,12 @@
-from langchain.document_loaders import PyPDFLoader
-from langchain.document_loaders import DirectoryLoader
+#from langchain.document_loaders import PyPDFLoader
+#from langchain.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter   
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Pinecone
-
+#from langchain.embeddings import OpenAIEmbeddings
+#from langchain.vectorstores import Pinecone
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import Pinecone
+from langchain_huggingface import HuggingFaceEmbeddings
 import os
 os.chdir('/Users/dnyanesh/Desktop/PDFReader/ChatBot-PDF-GenAI')
 
