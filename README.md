@@ -13,3 +13,4 @@ source ~/.zshrc   # or ~/.bash_profile if using bash
 conda --version
 conda create -n Chatbot python=3.10 -y
 conda activate Chatbot
+pip install cryptography --upgrade
